@@ -26,3 +26,4 @@ for i in var_list:
 
 #add constraint that each position can only have one value
 for pos in range(1, 12):
+    pass
