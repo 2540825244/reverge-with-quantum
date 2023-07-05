@@ -62,6 +62,8 @@ def find_triplets(lst, target_sum):
                     triplets.append(triplet)
     return triplets
 
+interactions = [[0, 1, 4], [1, 2, 5], [2, 3, 6], [4, 7, 8], [5, 8, 9], [6, 9, 10]] #list of list of positions that sums must be the same
+
 #initialize BQM with position-value variables
 var_list = [f'p{n}v{m}' for n in range(11) for m in range(1, 12)]
 print(var_list)
@@ -87,6 +89,7 @@ for val in range(1, 12):
 one_sum_bqm = combinations([f's{sum}' for sum in range(6, 31)], 1)
 
 #add constraint that the sum of each 3 adjacent hexagons must be the same WIP
+#for this I think I can maybe just correlate a bunch of variables to the sum?
 for sum in range(6, 31):
     triplets = find_triplets(range(1, 12), sum) #find all possible triplets that sum to the target sum
 
