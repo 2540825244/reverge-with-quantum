@@ -61,7 +61,7 @@ cqm.add_constraint(qs[10] == 11)
 print("Solving...")
 sampler = LeapHybridCQMSampler()
 start = datetime.datetime.now()
-sampleset = sampler.sample_cqm(cqm)
+sampleset = sampler.sample_cqm(cqm, label = 'Reverge with Quantum')
 feasible_sampleset = sampleset.filter(lambda d: d.is_feasible)
 num_feasible = len(feasible_sampleset)
 best_samples = \
