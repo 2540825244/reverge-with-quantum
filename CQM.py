@@ -1,5 +1,4 @@
-from dimod import ConstrainedQuadraticModel, Integer, QuadraticModel, BinaryQuadraticModel
-from dimod.generators.constraints import combinations
+from dimod import ConstrainedQuadraticModel, Integer
 from dwave.system import LeapHybridCQMSampler
 import datetime
 
