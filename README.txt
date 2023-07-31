@@ -8,4 +8,4 @@ greatly inspired by
 https://github.com/dwave-examples/sudoku
 for many stuff
 
-CQM.py is the good solver, anything elsed has failed/been uncompleted
+CQM.py is the solver
