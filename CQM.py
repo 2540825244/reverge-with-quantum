@@ -1,7 +1,3 @@
-'''
-Back to using CQM
-'''
-
 from dimod import ConstrainedQuadraticModel, Integer, QuadraticModel, BinaryQuadraticModel
 from dimod.generators.constraints import combinations
 from dwave.system import LeapHybridCQMSampler
